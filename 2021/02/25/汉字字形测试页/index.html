@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="璺道斋读书处，一个分享读书思考、技术学习的个人博客类网站">
+  
+  <meta name="author" content="璺道斋主">
+  <meta name="keywords" content="">
+  
+  <title>汉字字形测试页 - BookRest</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"daomingze.github.io","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>BookRest</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="汉字字形测试页">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-25 13:17" pubdate>
+        2021年2月25日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      16
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">汉字字形测试页</h1>
+            
+            <div class="markdown-body">
+              <h1 id="汉字字形测试页"><a href="#汉字字形测试页" class="headerlink" title="汉字字形测试页"></a>汉字字形测试页</h1><h2 id="概念一览"><a href="#概念一览" class="headerlink" title="概念一览"></a>概念一览</h2><p>部首，源自《说文解字》分部之首的汉字，属于文字学探究“字理构成”的模型。</p>
+<p>部件，改造自“部首”，专指使用部首检字法时，因汉字演化、汉字规范化（繁体简化）、检索方便等原因而根据实际字形而拆分的“部首”。因这种拆分中不符合字理，且被称呼为“部首”或“检字部首”（与之对应的是“识字部首”），容易产生混淆，所以以“部件”命名。部件可以等于形码输入法的“字根”概念。</p>
+<p>偏旁，属于“六书”中的“形声”造字法。原以左为偏，以右为旁，后泛指：⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻（表意文字描述字符，U+2FF0-U+2FFB）12种<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="此外还有〾，U+303E表意变体指示符[^结构]:由于某些字库不支持显示，特此说明12种结构：左右、上下、左中右、上中下、包围、上半包围、下半包围、左半包围、右半包围、左上半包围、右上半包围、左下半包围、交叉叠合。即5类结构：左右、上下、全包围、半包围、叠合。
+">[1]</span></a></sup>结构[^结构]中属于部首或部件的部分。一般而言，偏旁可以分为旁、头、底、框几类。</p>
+<p>笔画，或笔划<a href="%E7%B9%81%E4%BD%93%E5%AD%97%E4%B8%BA%E2%80%9C%E7%AD%86%E5%8A%83%E2%80%9D%E3%80%82%E8%A7%84%E8%8C%83%E6%B1%89%E5%AD%97%EF%BC%88%E7%AE%80%E5%8C%96%E5%AD%97%EF%BC%89%E4%BC%A0%E7%BB%9F%E7%94%A8%E2%80%9C%E7%AC%94%E7%94%BB%E2%80%9D%E3%80%82">^笔划</a>，是汉字基本组成部分。笔画通过一定的顺序（笔顺）构成了汉字。笔画由笔决定，正如衬线拉丁字体的衬线特征是由平头笔造成的那样，汉字笔画的特征是由传统书写工具——毛笔决定的。</p>
+<p>邱振中以三维空间建模的方式解析了毛笔运动的方向，他指出：“根据运动学原理，通过笔杆来操纵的笔毫锥体，只可能产生平动、提按、转动三种运动。……笔杆转动的同时笔毫着纸的侧面也在不停地转动，则称为绞转。平动、提按、绞转是三种基本的笔法”（《书法：七个问题》，中国人民大学出版社2011年，49页）。</p>
+<p>一点字坊的《传承字形笔画表1.26》提出了一个三级二十种的笔画描述体系。</p>
+<ul>
+<li>基本笔画：横竖撇捺点挑弯曲钩圈</li>
+<li>形态变化：扁直斜左右长短倒反</li>
+<li>复合笔画：折</li>
+</ul>
+<p>扁直似乎为对应的变化，似也可称为矮高、胖瘦。</p>
+<h3 id="说文解字：篆书部首"><a href="#说文解字：篆书部首" class="headerlink" title="说文解字：篆书部首"></a>说文解字：篆书部首</h3><p>540字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">一丄示三王玉玨气士丨屮艸蓐茻小八釆半牛犛告口凵吅哭走止癶步此正是辵彳廴㢟行齒牙足疋品龠冊㗊舌干𧮫只㕯句丩古十𠦃言誩音䇂丵菐𠬞𠬜共異舁𦥑䢅爨革鬲䰜爪丮鬥又𠂇史支𦘒聿畫隶臤臣殳殺𠘧寸皮㼱攴教卜用爻㸚 𥄎目䀠眉盾自白鼻皕習羽隹奞雈𦫳𥄕羊羴瞿雔雥鳥烏𠦒冓幺𢆶叀玄予放𠬪𣦼歹死冎骨肉筋刀刃㓞丯耒角竹箕丌左工㠭巫甘旨曰乃丂可兮号亏喜壴鼓豈豆豊豐䖒虍虎虤皿𠙴去血丶丹青井皀鬯食亼會倉入缶矢高冂𩫏京亯𣆪畗㐭嗇來麥夊舛舜韋弟夂久桀木東林才叒之帀出𣎵生乇𠂹𠌶華𥝌稽巢桼束㯻囗員貝邑𨛜日旦倝㫃冥晶月有朙囧夕多毌𢎘𣐺𠧪齊朿片鼎克彔禾秝黍香米毇臼凶𣎳𣏟麻尗耑韭瓜瓠宀宫呂穴㝱疒冖𠔼冃㒳网襾巾巿帛白㡀黹人𠤎匕从比北丘㐺𡈼重臥身㐆衣裘老毛毳尸尺尾履舟方儿兄兂皃𠑹先秃見覞欠㱃㳄旡頁𦣻面丏首𥄉須彡彣文髟后司巵卩印色𠨍辟勹包茍鬼甶厶嵬山屾屵广厂丸危石長勿冄而豕㣇彑豚豸𤉡易象馬𢊁鹿麤㲋兔萈犬㹜鼠能熊火炎黑囱焱炙赤大亦夨夭交𡯁壺壹㚔奢亢夲夰大夫立竝囟思心惢水沝瀕𡿨巜川泉灥永𠂢谷仌雨雲魚𩺰燕龍飛非卂𠃉不至西鹵鹽戶門耳𦣞手𠦬女毋民丿𠂆乁氏氐戈戉我亅珡𠃊亡匸匚曲甾瓦弓弜弦系糸素絲率虫䖵蟲風它龜黽卵二土垚堇里田畕黄男力劦金幵勺几且斤斗矛車𠂤𨸏𨺅厽四宁叕亞五六七九禸嘼甲乙丙丁戊己巴庚辛辡壬癸子了孨𠫓丑寅卯辰巳午未申酉酋戌亥<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="康熙字典：楷书部首"><a href="#康熙字典：楷书部首" class="headerlink" title="康熙字典：楷书部首"></a>康熙字典：楷书部首</h3><p>214字</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">⼀⼁⼂⼃⼄⼅⼆⼇⼈⼉⼊⼋⼌⼍⼎⼏⼐⼑⼒⼓⼔⼕⼖⼗⼘⼙⼚⼛⼜⼝⼞⼟⼠⼡⼢⼣⼤⼥⼦⼧⼨⼩⼪⼫⼬⼭⼮⼯⼰⼱⼲⼳⼴⼵⼶⼷⼸⼹⼺⼻⼼⼽⼾⼿⽀⽁⽂⽃⽄⽅⽆⽇⽈⽉⽊⽋⽌⽍⽎⽏⽐⽑⽒⽓⽔⽕⽖⽗⽘⽙⽚⽛⽜⽝⽞⽟⽠⽡⽢⽣⽤⽥⽦⽧⽨⽩⽪⽫⽬⽭⽮⽯⽰⽱⽲⽳⽴⽵⽶⽷⽸⽹⽺⽻⽼⽽⽾⽿⾀⾁⾂⾃⾄⾅⾆⾇⾈⾉⾊⾋⾌⾍⾎⾏⾐⾑⾒⾓⾔⾕⾖⾗⾘⾙⾚⾛⾜⾝⾞⾟⾠⾡⾢⾣⾤⾥⾦⾧⾨⾩⾪⾫⾬⾭⾮⾯⾰⾱⾲⾳⾴⾵⾶⾷⾸⾹⾺⾻⾼⾽⾾⾿⿀⿁⿂⿃⿄⿅⿆⿇⿈⿉⿊⿋⿌⿍⿎⿏⿐⿑⿒⿓⿔⿕<br></code></pre></td></tr></table></figure>
+
+<p>UNICODE在编制东亚表意文字（CJK区，U+4E00至U+9FFF，U13时还剩最后三个编码）时，对于中国大陆GB2312音序编码、中国台湾BIG5笔画编码、日本JIS日语读音编码，折中采用康熙部首编码顺序。</p>
+<p>一丨丶丿乙亅二亠人儿入八冂冖冫几凵刀力勹匕匚匸十卜卩厂厶又口囗土士夂夊夕大女子宀寸小尢尸屮山巛工己巾干幺广廴廾弋弓彐彡彳心戈戶手支攴文斗斤方无日曰月木欠止歹殳毋比毛氏气水火爪父爻爿片牙牛犬玄玉瓜瓦甘生用田疋疒癶白皮皿目矛矢石示禸禾穴立竹米糸缶网羊羽老而耒耳聿肉臣自至臼舌舛舟艮色艸虍虫血行衣襾見角言谷豆豕豸貝赤走足身車辛辰辵邑酉釆里金長門阜隶隹雨靑非面革韋韭音頁風飛食首香馬骨高髟鬥鬯鬲鬼魚鳥鹵鹿麥麻黃黍黑黹黽鼎鼓鼠鼻齊齒龍龜龠</p>
+<h3 id="汉字部首表"><a href="#汉字部首表" class="headerlink" title="汉字部首表"></a>汉字部首表</h3><p>《GF 0011-2009 汉字部首表》（前身为1983年发布的《汉字统一部首（草案）》）：主部首201个，附形部首100个。</p>
+<p>主部首</p>
+<p>一丨丶丿乛十厂匚卜冂八人勹儿匕几亠冫冖凵卩刀力又厶廴干工土艹寸廾大尢弋小口囗山巾彳彡夕夂丬广门宀辶彐尸己弓子屮女飞马幺巛王无韦木支犬歹车牙戈比瓦止攴日贝水见牛手气毛长片斤爪父月氏欠风殳文方火斗户心毋示甘石龙业目田罒皿生矢禾白瓜鸟疒立穴疋皮癶矛耒老耳臣覀而页至虍虫肉缶舌竹臼自血舟色齐衣羊米聿艮羽糸麦走赤豆酉辰豕卤里足邑身采谷豸龟角言辛青𠦝雨非齿黾隹阜金鱼隶革面韭骨香鬼食音首髟鬲鬥高黄麻鹿鼎黑黍鼓鼠鼻龠</p>
+<p>附形部首</p>
+<section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>此外还有〾，U+303E表意变体指示符<br>[^结构]:由于某些字库不支持显示，特此说明12种结构：左右、上下、左中右、上中下、包围、上半包围、下半包围、左半包围、右半包围、左上半包围、右上半包围、左下半包围、交叉叠合。即5类结构：左右、上下、全包围、半包围、叠合。
+<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/02/25/%E4%BF%A1%E6%81%AF%E8%87%AA%E8%AF%9D/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/02/25/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
