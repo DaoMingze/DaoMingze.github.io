@@ -56,7 +56,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"daomingze.github.io","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+    var CONFIG = {"hostname":"daomingze.github.io","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"|","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -246,7 +246,18 @@
         
         
         
-        <a target="_blank" rel="noopener" href="https://douban.com" class="
+        <a target="_blank" rel="noopener" href="http://www.coolapk.com/u/527602" class="
+           hint--bottom hint--rounded"
+           aria-label=酷安
+        >
+          <i class="iconfont icon-coolapk" aria-hidden="true"></i>
+          
+        </a>
+      
+        
+        
+        
+        <a target="_blank" rel="noopener" href="https://www.douban.com/people/92266681/" class="
            hint--bottom hint--rounded"
            aria-label=豆瓣
         >
@@ -261,7 +272,7 @@
            hint--bottom hint--rounded"
            aria-label=哔哩哔哩
         >
-          <i class="iconfont icon-bilibili-fill" aria-hidden="true"></i>
+          <i class="iconfont icon-bilibili" aria-hidden="true"></i>
           
         </a>
       
@@ -294,10 +305,10 @@
 <article class="about-content mt-5">
   <div class="markdown-body">
     <h1 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h1><p>2021年2月18日，大学室友突然向我安利一个免费建站的bilibili视频，并向我展示了他的个人网站。基于兴趣的驱动，我开始真正的了解创建面向公网的网站建设。</p>
-<p>视频提供的思路是借助美国免费云服务器（免备案）和up主的三次域名转发，在lamp条件下使用typecho系统加载moz主题搭建的动态博客网站。</p>
+<p>视频提供的思路是借助美国免费云服务器（免备案）和up主的三次域名转发，在LNMP条件下使用Typecho系统加载Moz主题搭建的动态博客网站。</p>
 <p>忙完一阵之后，考虑我如果做博客的话，一方面是学习实践前端知识，另一方面是写一点自己的东西。因此选择了静态网页生成的博客网站思路，这样，自己可以更加灵活的设置网站。</p>
 <p>此外，考虑到域名转发的风险性，我自己在阿里云的万网上，买了一个top域名（即bookrest.top）。本来是想用笔名的全拼来注册，但无意中发现bookrest，这一指阅书架的英文名还未被注册，于是鬼使神差地买下。后来自己将其译为“书歇”，于是就有了本站的slogan——读书歇脚处，璺道静心斋。</p>
-<p>静态网站本质上只需要一个公网IP和存储空间即可，于是首先确定的是GitHub Pages，于是有了<a href="http://daomingze.github.io/">daomingze.github.io</a>（域名转发到<a href="http://www.bookrest.top），但后来发现有时候访问不上（毕竟服务器在国外）。然后就想到了国内的GitHub——Gitee，于是有了[dao_mingze.gitee.io](https://dao_mingze.gitee.io)。">www.bookrest.top），但后来发现有时候访问不上（毕竟服务器在国外）。然后就想到了国内的GitHub——Gitee，于是有了[dao_mingze.gitee.io](https://dao_mingze.gitee.io)。</a></p>
+<p>静态网站本质上只需要一个公网IP和存储空间即可，于是首先确定的是GitHub Pages，于是有了<a href="https://daomingze.github.io/">daomingze.github.io</a>（域名转发到<a target="_blank" rel="noopener" href="https://www.bookrest.top/">www.bookrest.top</a>），但后来发现有时候访问不上（毕竟服务器在国外）。然后就想到了国内的GitHub——Gitee，于是有了<a target="_blank" rel="noopener" href="https://dao_mingze.gitee.io/">dao_mingze.gitee.io</a>。</p>
 <p>我用的静态网页生成系统是基于node.js的Hexo，而主题则是比较热门的Fluid。在本地，Typora作为md文档编辑的前端，VS Code作为静态前端的代码编辑器。</p>
 
   </div>
@@ -342,6 +353,12 @@
 </div>
     
 
+    
+      <div class="col-lg-7 mx-auto nopadding-x-md">
+        <div class="container custom mx-auto">
+          https://v1.hitokoto.cn/
+        </div>
+      </div>
     
   </main>
 
