@@ -1,0 +1,713 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head><!-- hexo injector head_begin start --><script src="/js/custom.js"></script><!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="璺道斋读书处，一个分享读书思考、技术学习的个人博客类网站">
+  <meta name="author" content="璺道斋主">
+  <meta name="keywords" content="">
+  
+  <title>信息的概念 | BookRest</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"daomingze.github.io","root":"/","version":"1.8.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"|","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>BookRest</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="fa fa-home"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="fa fa-archive"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="fa fa-th-list"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="fa fa-tags"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="fa fa-user"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-link"></i>
+                友链
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/links/libraries/">
+                    <i class="fa fa-university"></i>
+                    图书馆
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/links/">
+                    <i class="fa fa-id-card"></i>
+                    友情博客
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="信息的概念">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      璺道斋主
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-25 20:18" pubdate>
+        2021年2月25日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      4.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      49
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">信息的概念</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年3月18日 凌晨
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h1 id="信息的概念"><a href="#信息的概念" class="headerlink" title="信息的概念"></a>信息的概念</h1><h1 id="一、information溯源"><a href="#一、information溯源" class="headerlink" title="一、information溯源"></a>一、information溯源</h1><p>毫无疑问，我们今天所用的信息概念是来自西方的，而不是本土的。因此探究其意义的发展和观察其在不同学科的语用需要从information开始。</p>
+<p>主要参考：《爱思维尔科学哲学手册·信息哲学卷》</p>
+<h2 id="从哲学中隐退"><a href="#从哲学中隐退" class="headerlink" title="从哲学中隐退"></a>从哲学中隐退</h2><blockquote>
+<p>信息”一词源自拉丁语，西塞罗（Cicero）以及奥古斯丁（ Augustine）等人在其著作中均曾使用过该词，用来表述柏拉图（Plato）及其后继者关于理念（ideas）或型相（ forms）的理论。特别是西塞罗，他使用了“in-formare”来翻译伊壁鸠鲁学说中的“预见（ prolepsis）”概念，即心中已有的表征[Capurro and hjrøland（卡普罗和约兰德），2003]。</p>
+<p>中世纪时，“information”这一专业术语则由此从哲学语篇中消失，似乎不再引起人们的注意。反而，当英国经验主义者们又回到最初的柏拉图灵感论时，他们创造了“idea”一词（来自柏拉图的“理念eidos”），意为：“思考时的一切皆为理解之对象……一切意为幻想、概念、种属（ species），或思考时心中所想之物”[Locke（洛克），1961，Essay Ⅰ，i，8]。在哲学界中，从休谟（Hume）、康德（Kant）以及德国唯心主义哲学家，到胡塞尔（ Husserl）及其后的哲学家，人们开始大胆使用“理念（idea）”一词。</p>
+<p>——爱思维尔科学哲学手册·信息哲学卷·上册：4-5.</p>
+</blockquote>
+<h2 id="进入科技"><a href="#进入科技" class="headerlink" title="进入科技"></a>进入科技</h2><blockquote>
+<p>15世纪时，“information”一词出现在法语俗语中，其词义众多，包括：“调查”、“教育”、“提供或传递知识的行为”以及“情报”等。</p>
+</blockquote>
+<p>实际上中世纪以后，information就逐渐扩展到编码（符号蕴藏的东西）、物理学（熵）、数学（统计学）。</p>
+<p>而将信息引入数学的，正是Claude E. Shannon（克劳德·香农）的<em>A Mathematics Theory of Communication</em>(1948)。</p>
+<blockquote>
+<p>不论各自看法如何，有一点人们已经达成共识，那就是在技术文献中，对于信息理论主要有如下三种分类方法：</p>
+<p>第一类信息：知识、逻辑，即告知性回答中传递出的内容。<br>第二类信息：概率研究、信息理论研究，即定量研究。<br>第三类信息：算法、代码压缩，即定量研究。</p>
+<p>简言之，即第一类信息指的是认知逻辑与语言语义学研究，第二类信息指香农的信息理论，并与物理学中的熵有所关联，而第三种信息是指柯尔莫哥洛夫提出的“复杂性”，与计算学的基础理论相关。这几种类型的信息彼此并不冲突，而是对不同主题与研究方式的自然分类。</p>
+<p>——爱思维尔科学哲学手册·信息哲学卷·上册：14.</p>
+</blockquote>
+<p>图书馆学和情报学（Library &amp; Information Science）中的信息通常即是对第一类信息的讨论。</p>
+<h1 id="二、信息及其相关概念的关系"><a href="#二、信息及其相关概念的关系" class="headerlink" title="二、信息及其相关概念的关系"></a>二、信息及其相关概念的关系</h1><p>链式结构：FDIKI信息链与DIKW概念链</p>
+<p>FDIKI信息链是马费成等的提法，特点是以信息为中心的转换过程，是钟义信《信息科学原理》在信息管理领域的体现；DIKW概念链的特点是以转化为核心，由塔式结构转向链式结构，表明随着认识的深入，各概念间的关系由单纯的层级包含转向复杂的交叉。</p>
+<h5 id="信息科学原理（钟义信，1988年1版；2013年5版）"><a href="#信息科学原理（钟义信，1988年1版；2013年5版）" class="headerlink" title="信息科学原理（钟义信，1988年1版；2013年5版）"></a>信息科学原理（钟义信，1988年1版；2013年5版）</h5><h6 id="信息定义谱系"><a href="#信息定义谱系" class="headerlink" title="信息定义谱系"></a>信息定义谱系</h6><blockquote>
+<p>本体论信息：某事物的本体论信息，是指该事物所呈现（所表述）的运动状态及其变化方式。</p>
+<p>认识论信息（全信息，comprehension information）：主体关于某事物的认识论信息，是指主体所表述的该事物运动状态及其变化方式，包括运动状态及其变化的外在形式、内在含义和效用价值。</p>
+</blockquote>
+<h6 id="认识论信息的基本分类"><a href="#认识论信息的基本分类" class="headerlink" title="认识论信息的基本分类"></a>认识论信息的基本分类</h6><blockquote>
+<p><strong>语法</strong>信息，指主体所表述的事物运动状态及其变化方式的<strong>外在形式</strong>。</p>
+<p><strong>语义</strong>信息，指主体所表述的事物运动状态及其变化方式的<strong>内在含义</strong>。</p>
+<p><strong>语用</strong>信息，指主体所表述的事物运动状态及其变化方式<strong>对于主体目标而言的效用价值</strong>。</p>
+</blockquote>
+<h6 id="信息的观察分类"><a href="#信息的观察分类" class="headerlink" title="信息的观察分类"></a>信息的观察分类</h6><blockquote>
+<p>由于引入了主体，引入了认识主体与事物客体之间的关系，认识论信息还衍生出另一组有用的概念，这就是实在信息、先验信息和实得信息的概念。</p>
+<p>某个事物的<strong>实在信息</strong>，是指这个事物实际所具有的信息。事物的实在信息是事物本身所固有的一个特征量，它只取决于事物本身的运动状态及其变化方式，而与认识主体的因素无关。</p>
+<p>主体关于某事物的<strong>先验信息</strong>，是指主体在实际观察该事物之前已经具有的关于该事物的信息。先验信息既与事物本身的运动状态及其变化方式有关，也与主体的主观因素有关。</p>
+<p>主体关于某事物的<strong>实得信息</strong>，是指主体在观察该事物的过程中实际获得的关于该事物的净增（减）信息。实得信息不仅与事物本身的运动状态及其变化方式有关，而且也与主体的观察能力以及实际的观察条件有关。</p>
+<p>在理想情况下，主体R关于某事物X的实得信息量$I(X;R)$应是X的实在信息量$I(X)$与R关于X的先验信息量$I_{0}(X;R)$之差。</p>
+</blockquote>
+<p>即“实得信息=实在信息-先验信息”，也即“实得信息+先验信息=实在信息”。实在信息即本体论信息。</p>
+<p>对于机器和传输而言，语法与语义、语用无关，语法信息就是数据。对于人而言，语法信息不是数据，而是先验信息，或说信息准备（人的认识论信息不可拆分处理，而通信工程师只用处理信号），这也就是为什么语言哲学关注人类的语言。</p>
+<h6 id="信息转换原理"><a href="#信息转换原理" class="headerlink" title="信息转换原理"></a>信息转换原理</h6><blockquote>
+<p>一类信息转换原理：本体论信息到认识论信息</p>
+<ol>
+<li>本体论信息S→语法信息X，传感系统</li>
+<li>语法信息X→语用信息Z，分为检索（回忆）与计算（体验）两种模式</li>
+<li>语法信息X+语用信息Z→语义信息Y，抽象</li>
+</ol>
+<p>二类信息转换原理：认识论信息的功能化</p>
+<ol>
+<li>通信：信息传递</li>
+<li>认知：信息-知识转换</li>
+<li>智能：知识-策略转换</li>
+<li>控制：策略-行为转换</li>
+<li>系统：信息-策略转换</li>
+</ol>
+</blockquote>
+<p>钟义信 著.2013年.信息科学原理[M].5版.北京: 北京邮电大学出版社.</p>
+<h5 id="信息链模型（马费成-等，2002年1版；2018年3版）"><a href="#信息链模型（马费成-等，2002年1版；2018年3版）" class="headerlink" title="信息链模型（马费成 等，2002年1版；2018年3版）"></a>信息链模型（马费成 等，2002年1版；2018年3版）</h5><p>信息概念</p>
+<blockquote>
+<p>在最为一般的意义上，亦即没有任何约束条件，我们可以将信息定义为事物存在的方式和运动状态的表现形式。</p>
+<p>在认识论层次上，我们可以将信息定义为：主体所感知或表述的事物存在的方式和运动状态。这里，主体所感知的是外部世界向主体输入的信息，主体所表述的则是主体向外部世界输出的信息。</p>
+</blockquote>
+<p>信息链</p>
+<blockquote>
+<p>英语的Information是一个连续体的概念，由事实—数据—信息—知识—智能五个要素构成“信息链”（Information Chain）。</p>
+<ul>
+<li>“事实（fact）”是人类思想和社会活动的客观映射；</li>
+<li>“数据（Data）”是事实的数字化、编码化、序列化、结构化；</li>
+<li>“信息（Information）”是数据在信息媒介上的映射；</li>
+<li>“知识（Knowledge）”是对信息的加工、吸收、提取和评价的结果；</li>
+<li>“智能（Intelligence）”则是运用知识的能力。</li>
+</ul>
+<p>信息链的上游面向物理属性，信息链的下游面向认知属性。（梁战平，2003）</p>
+<p><strong>数据</strong>是载荷或记录信息的按照一定规则排列组合的物理符号。它可以是数字、文字、图像，也可以是声音或计算机代码。人们对信息的接收始于对数据的接收，对信息的获取只能通过对数据背景（Context）和规则的解读。背景是接收者针对特定数据的信息准备，即当接收者了解物理符号序列的规律，并知道每个符号或符号组合公认的指向性目标或含义时，便可获取一组数据载荷的信息，亦即数据转化为信息。可以用如下公式表示：数据+背景=信息。</p>
+<p><strong>信息</strong>是数据载荷的内容，对于同一信息，其数据表现形式可以多种多样。信息告诉我们：“这组符号表达什么。”</p>
+<p><strong>知识</strong>是信息接收者通过对信息的提炼和推理而获得的正确结论，是人通过信息对自然界、人类社会以及思维方式与运动规律的认识与掌握，是人的大脑通过思维重新组合的、系统化的信息集合。知识告诉我们：“这组数据意味着什么。”</p>
+<p>知识的一般传输模式：传输者的知识→数据→信息→接收者的知识</p>
+<p>信息转化为知识，关键在于信息接收者对信息的理解能力，即接收者的信息与知识准备。有：信息+经验=知识（陈锐，2000）</p>
+<p><strong>智能</strong>是解决问题的一种能力和方略，是在一定的环境下针对特定的问题和目的而有效地获得信息、处理信息形成知识和策略、利用策略来解决问题，从而成功地达到目的的能力（钟义信，2002）。智能是被目的所激活的知识，是知识在一定条件下的运动方式。</p>
+</blockquote>
+<p>作为“人类思想和社会活动的客观映射[^1:10]”的事实（fact）实际上是指本体论层次的社会信息（与自然信息相对而言），而数据（data）是本体论信息转化为认识论信息的中介产物（因而具有物理属性，即客观性）。而信息链中心的信息，则是认识论信息。作为正确结论的知识，必定排除了错误，因此知识这种信息集合是信息的子集。显然，智能作为运用知识的能力，不是一种信息。所以就范围而言：知识&lt;信息&lt;数据&lt;事实。</p>
+<p>如果将信息链中的数据、信息和知识视为紧密相连的复合概念中的一部分，那么数据可以视为语法信息，将信息视为语用信息（表达什么，是目的的描述），知识视作语义信息（意味着什么，是含义的描述）。</p>
+<p>从“对信息的获取只能通过对数据背景（context）和规则的解读[^1:11]”、“背景是接收者针对特定数据的信息准备[^1:11]”可知，数据是事实的编码，也是传输完成后主体实际获得的，即实得信息，在类比理解中被描述为数字、数词、话语；信息准备是指先验信息（即主体观或接收和解读数据前掌握的信息），在类比理解中被描述为单位、量词、语境。即“数据+背景=信息”。</p>
+<h5 id="经典DIKW概念链"><a href="#经典DIKW概念链" class="headerlink" title="经典DIKW概念链"></a>经典DIKW概念链</h5><blockquote>
+<p>The Rock </p>
+<p>by Thomas S. Eliot, 1934</p>
+<p>……<br>Where is the Life we have lost in living? </p>
+<p>Where is the <strong>wisdom</strong> we have lost in <strong>knowledge</strong>? </p>
+<p>Where is the <strong>knowledge</strong> we have lost in <strong>information</strong>? </p>
+<p>The cycles of Heaven in twenty centuries </p>
+<p>Bring us farther from God and nearer to the Dust.</p>
+<p>……</p>
+</blockquote>
+<p>克利夫兰（H. Cleveland）1982年在《未来学家》发表文章《信息即资源》，创建了DIKW的原型。后经泽勒尼（M. Zeleny）等扩展，由劳利（J. Rowley）在2007年集成为DIKW层级模型（知识金字塔）。</p>
+<p>Cleveland H. Information as Resource [J]. The Futurist, 1982(12): 34-39.</p>
+<p>Rowley J. The wisdom hierarchy: representations of the DIKW hierarchy [J]. Journal of Information Science, 2007, 33(2): 163-180.</p>
+<h5 id="DIKW概念链及其量化逻辑（叶鹰，2006年1版；2018年3版）"><a href="#DIKW概念链及其量化逻辑（叶鹰，2006年1版；2018年3版）" class="headerlink" title="DIKW概念链及其量化逻辑（叶鹰，2006年1版；2018年3版）"></a>DIKW概念链及其量化逻辑（叶鹰，2006年1版；2018年3版）</h5><p>英文据<em>Measuring Knowledge: A Quantitative Approach to Knowledge Theory</em></p>
+<p><a target="_blank" rel="noopener" href="http://article.sciencepublishinggroup.com/html/10.11648.j.ijdsa.20160202.13.html">http://article.sciencepublishinggroup.com/html/10.11648.j.ijdsa.20160202.13.html</a></p>
+<blockquote>
+<p>香农信息论：<strong>客观数据D</strong>经输入传递系统成为<strong>物理信息i</strong>，$i=d\log D$；</p>
+<p>波动-扩散方程组：<strong>物理信息i</strong>经社会传递，转化为可接收的<strong>客观信息I</strong>，$I=bi$，b为信息传递系数即累积信息压缩率与损失率之积；</p>
+<p>对数转换原理：可接收的<strong>客观信息I</strong>经主体吸收，转化为带有主体价值判断的<strong>主观信息J</strong>，$J=v\log I$，v为价值系数由主观判断；</p>
+<p>布鲁克思知识方程式：<strong>主观信息J</strong>经结构化体系化成为<strong>知识K</strong>，$K=K_{0}+kvI(\ln I-1)$，k为知识转化系数；</p>
+<p>符号主义智能观：<strong>知识K</strong>的综合运用构成<strong>智慧W</strong>，$W_j=tr(K_j)$，j是智能体即主体，$K_j$是j的知识矩阵。</p>
+</blockquote>
+<p>这个关系中，有三种信息，物理信息、客观信息和主观信息。胡昌平等（信息服务与用户，2015）认为信息分为三种状态，记录状态、传递状态和接收状态。物理信息即是传递状态，客观信息则是记录状态，主观信息就是接收状态。</p>
+<h5 id="图书馆信息职业活动对象模型（于良芝，2016年1版-2017年重印修订-）"><a href="#图书馆信息职业活动对象模型（于良芝，2016年1版-2017年重印修订-）" class="headerlink" title="图书馆信息职业活动对象模型（于良芝，2016年1版 [2017年重印修订]）"></a>图书馆信息职业活动对象模型（于良芝，2016年1版 [2017年重印修订]）</h5><p>英文据<em>Back to the fundamentals again: A redefinition of information and associated LIS concepts following a deductive approach</em></p>
+<p><a target="_blank" rel="noopener" href="https://www.emerald.com/insight/content/doi/10.1108/JD-12-2014-0171/full/html">https://www.emerald.com/insight/content/doi/10.1108/JD-12-2014-0171/full/html</a></p>
+<blockquote>
+<p><strong>数据</strong>（data），可以被赋予意义或已经被赋予意义的符号或符号集。数据分为先于意义而在的和承载意义而生的。其基本性质是意义的载体或外壳，即数据是相对于意义而存在的。数据可以在剥离或忽略意义的前提下进行独立的观察和处理。</p>
+<p><strong>信息</strong>（information），利用特定数据表达特定意义的结合物（combined product）。信息=数据+意义（meaning）。信息={数据的形式}+{意义的类别}。信息可分为更小的“信息块”。</p>
+<p><strong>知识</strong>（knowledge），是信息的意义类别之一。知识是人们通过复杂的智力活动（intellectual labor）而形成的对自然、人和社会（特定现象）的认识和见解。它的生成需要满足特定条件（比如被足够多的证据验证），而条件的具体标准通常由学术共同体控制；它具有一般事实所不具有的解释力、洞察力和预见力，因而可以成为决策的依据。知识是智慧的来源。</p>
+<p><strong>知识声称</strong>，作者为公布其知识发现和确认其发现权而形成的原始知识记录。现代社会最常见的是学者向刊物提交的论文稿件。</p>
+<p><strong>文献</strong>（document），为了表达思想、学习、参考、贮存、交流的需要，通过一定的记录方式将信息记录在某种实物载体（material media）上形成的产品。文献=数据+意义+实物载体，即文献=信息+实物载体。知识声称是一种文献。文献是一种物理实体（physical entity）。</p>
+<p>文献的<strong>实物载体</strong>（material media），用来记载知识或信息的人工附载物。</p>
+<p>文献的<strong>记录方式</strong>，将表达特定知识、消息、事实等意义的特定数据物化到实物载体之上的方式，或把特定信息从一种载体转移到另一种载体知识的方式。</p>
+<p><strong>作品</strong>（work），文献中的讯息（message）。作品与信息属于同一范畴，是信息的一种，但外延略小。作品是投入了相当智力投入的信息。作品是一组完整的数据表达一个相对完整的意义，因而不可细分。作品是智力型信息的一个单元，是LIS中最常用的信息单位。</p>
+<p>图书馆信息职业的主要活动对象是信息和文献，基本对象是作品。知识一经表达即与数据结合成为信息。承载意义而生的数据直接以信息形态被管理。而先于意义而生的纯数据一般由采集者管理（分散状态），由于现代信息技术而体现价值，对其态度仍有分歧，但并不妨碍特定单位的数据活动展开。</p>
+</blockquote>
+<p>先于意义而在的数据是延时赋予，承载意义而生的数据是即时赋予。</p>
+<p>数据可以在剥离或忽略意义的前提下进行独立的观察和处理。香农在信息论中证明的即是这一点——语法信息可以独立于内容和用途进行处理。</p>
+<p>“信息=数据+意义”与“信息=数据+背景”有细微差别，即意义（meaning）与背景（context）的差别。“背景”强调生成和解读，“意义”强调主体获得的结果。数据的形式、意义的类别。即数据是语法信息、意义是语义信息和语用信息的结合。“背景”更看重语用信息，“意义”更突出语义信息。</p>
+<p>作品的语义和语用有所区别；而在未融入智力劳动的信息中，语义=语用。</p>
+<h5 id="非链关系（叶继元等，2018年1版）"><a href="#非链关系（叶继元等，2018年1版）" class="headerlink" title="非链关系（叶继元等，2018年1版）"></a>非链关系（叶继元等，2018年1版）</h5><blockquote>
+<p><strong>信息</strong>，广义指客观事物的存在、运动和变化的方式、特征、规律及其表现形式；狭义指用来消除随机不确定性的东西。已经被认识到的信息即认识论信息。</p>
+<p><strong>数据</strong>是认识论信息的一种类型（数据&lt;信息），包括“有意义、价值、关联”的部分（狭义信息）和暂时“无意义、价值、联系”的部分。</p>
+<p><strong>知识</strong>是系统化、有价值、有用的信息。是认识论信息的子集（知识&lt;信息），与数据是交叉关系。</p>
+<p><strong>智慧</strong>（wisdom）是针对问题可活用、能解决问题的知识（智慧&lt;知识）；智能是付诸行动的智慧。（根据图表，智慧与数据是交叉关系）</p>
+</blockquote>
+<link rel="stylesheet" href="/css/markmap.css" type="text/css">
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%9B%BE%E6%83%85/">图情</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%B4%E7%90%86/">整理</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/03/%E5%A4%A7%E5%B8%88%E4%BB%AC%E7%9A%84%E5%9B%BD%E5%AD%A6%E4%B9%A6%E5%8D%95/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">大师们的国学书单</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/02/%E5%BA%8F/">
+                        <span class="hidden-mobile">自序</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-x-md">
+    <div class="container custom post-custom mx-auto">
+      <div class="center"><span id="jinrishici-sentence">正在加载今日诗词....</span> <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script></div>
+    </div>
+  </div>
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     驱动自<a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span style="color:#4a55ee">Hexo</span></a> | 主题为 <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span style="color:#4a55ee">Fluid</span></a><br/> <p class="copyright"> Copyright © 2020 - 2021 <a href="../about/">璺道斋主</a></p> <a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20214096" target="_blank"> 20214096号</a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            <i class='fa fa-eye'></i> 
+            <span id="busuanzi_value_site_pv"></span>
+             
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            <i class='fa fa-user'></i> 
+            <span id="busuanzi_value_site_uv"></span>
+             
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/custom.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/d3@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.7.4/dist/browser/view.min.js"></script>
+  <script>
+      const mindmaps = document.querySelectorAll('.markmap-svg');
+   
+      for(const mindmap of mindmaps) {
+          markmap.markmap(mindmap, JSON.parse(mindmap.innerHTML));
+      }
+  </script> <!-- hexo injector body_end end --></body>
+</html>
