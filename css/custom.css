@@ -3,4 +3,27 @@
 }
 .kaiti {
 	font-family: '楷体', cursive;
+}
+
+.mirror {
+	transform: rotateY(180deg);
+	display: inline-block;
+}
+
+.invert{
+	filter: invert(100%);
+	background-color: #f9e7cd;
+}
+
+.bookrest {
+	font-family: bookrest;
+	text-align: center;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: bookrest;
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/bookrest-Regular.woff) format('woff');
 }<link rel="stylesheet" href="/css/markmap.css" type="text/css">
